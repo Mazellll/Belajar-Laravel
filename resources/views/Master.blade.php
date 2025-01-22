@@ -1,3 +1,5 @@
+{{-- Template untuk sidebar --}}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
