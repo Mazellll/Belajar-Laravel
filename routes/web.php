@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\court_typeController;
+use App\Http\Controllers\courtController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,3 +39,9 @@ Route::get('/notif', function(){
     return view ("Notif");
 });
 
+Route::get('/court-type', [court_typeController::class, 'index']);
+Route::get('/mcourt', [courtController::class, 'mcourt']);
+Route::post('/court-type', [court_typeController::class, 'store']);
+
+Route::resource('court', courtController::class);
+Route::resource('court_type', court_typeController::class);

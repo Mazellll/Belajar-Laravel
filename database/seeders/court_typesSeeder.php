@@ -15,7 +15,7 @@ class court_typesSeeder extends Seeder
         $faker = Faker::create('id_ID');
         for($i=1; $i <=10; $i++ ){
             DB::table('court_types')->insert([
-                'name' => $faker->name
+                'name' => 'Tipe ' .$i,
             ]);
         }
     }
